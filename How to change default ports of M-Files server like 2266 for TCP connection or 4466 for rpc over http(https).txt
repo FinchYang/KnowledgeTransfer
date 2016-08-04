@@ -1,0 +1,7 @@
+you can change the default ports with the following registry settings on the M-Files server computer:
+Key: HKEY_LOCAL_MACHINE/Software/Motive/M Files/<version>/Server/MFServer/
+HTTPS port REG_SZ name: RPCOverHTTPEndpoint
+TCP/IP port REG_SZ name: RPCEndpoint
+
+After changing the port(s), you need to restart the M-Files Server service before the change takes effect. 
+Note that you have to update all clients' vault connections to use the new port before they can connect to the server.
